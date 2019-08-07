@@ -1,4 +1,4 @@
-package dao;
+package dao.daointerfaces;
 
 import entity.EmployeePRJ;
 
@@ -11,7 +11,7 @@ public interface EmployeePrjDAO {
 
     //read
     List<EmployeePRJ> getAll();
-    EmployeePRJ getById(long employeeId, long projectId);
+    EmployeePRJ getByEmpoyeeIdAndPrjId(long employeeId, long projectId);
 
     //update
     void update(EmployeePRJ employeePRJ);
